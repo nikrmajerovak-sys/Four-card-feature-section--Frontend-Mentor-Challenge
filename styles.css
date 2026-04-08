@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-2: hsl(0, 78%, 62%);
+    --card-1: hsl(180, 62%, 55%);
+    --card-3: hsl(34, 97%, 64%);
+    --card-4: hsl(212, 86%, 64%);
+    --heading-color: hsl(234, 12%, 34%);
+    --p-color: hsl(212, 6%, 44%);
+    --background: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 8vw;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 6.5vw, 3rem);
+    color: var(--heading-color);
+}
+
+.h1-normal {
+    font-weight: normal;
+}
+
+p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.intro {
+    font-size:clamp(1rem, 4vw, 1.2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--heading-color);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    width: clamp(300px, 80vw, 350px);
+    height: auto;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.supervisor {
+    border-top: 3px solid var(--card-1);
+}
+
+.team-builder {
+    border-top: 3px solid var(--card-2);
+}
+
+.karma {
+    border-top: 3px solid var(--card-3);
+}
+
+.calculator {
+    border-top: 3px solid var(--card-4);
+}
+
+.card img {
+    position: relative;
+    width: 50px;
+    align-self: flex-end;
+    top: 20px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--card-3);
+}
+
+@media (min-width: 850px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1300px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .supervisor {
+        grid-column: 1;
+        grid-row: 2 / 4;
+    }
+
+    .team-builder {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    .karma {
+        grid-column: 2;
+        grid-row: 3 / 5;
+    }
+
+    .calculator {
+        grid-column: 3;
+        grid-row: 2 / 4;
+    }
+}
