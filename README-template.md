@@ -31,5 +31,5 @@ I learned how to work with media queries and grid layout.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [(https://github.com/nikrmajerovak-sys/Four-card-feature-section--Frontend-Mentor-Challenge/tree/main)]
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
