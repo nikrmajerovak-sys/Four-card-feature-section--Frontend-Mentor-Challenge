@@ -11,6 +11,7 @@ Users should be able to:
 
 ### Screenshot
 
+<img width="427" height="1626" alt="obrazek" src="https://github.com/user-attachments/assets/bfb03bdb-58b0-40ad-8f6f-3db99b9f80e1" />
 
 
 
